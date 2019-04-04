@@ -1,5 +1,5 @@
 package dam;
 
-public enum Velocidad {
+public enum Speed {
     SLOW, MEDIUM, HIGH
 }

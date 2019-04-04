@@ -1,17 +1,34 @@
 package dam;
 
-import dam.Velocidad;
-
 public class Fan {
-    private int speed = Velocidad.MEDIUM.ordinal();
+    private Speed speed = Speed.MEDIUM;
     private boolean on = false;
-    private double radious = 5;
-    private String color = "blue";
+    private double radius = 5;
+    private String color = "Blue";
 
-    public Fan(){ }
+    public Fan(){}
+
+    ///////////
+    //GETTERS//
+    ///////////
+    public Speed getSpeed() {
+        return speed;
+    }
+
+    public boolean isOn() {
+        return on;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public String getColor() {
+        return color;
+    }
 
     @Override
     public String toString() {
-        return "\nSPEED: "+speed+"\nPOWER: "+on+"\nRADIOUS: "+radious+"\nCOLOR: "+color;
+        return "\nSPEED: "+speed+"\nPOWER: "+on+"\nRADIUS: "+ radius +"\nCOLOR: "+color;
     }
 }
