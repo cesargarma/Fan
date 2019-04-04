@@ -9,7 +9,6 @@ public class PruebasEnum {
         for(Velocidad vel: Velocidad.values()) {
             System.out.println("Speed: "+vel);
             System.out.println("Position: "+vel.ordinal());
-            System.out.println("hola");
         }
     }
 }
